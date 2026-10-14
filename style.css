@@ -1,0 +1,48 @@
+body {
+            background-color: #060911;
+            color: #f3f4f6;
+            background-image: 
+                radial-gradient(at 10% 10%, rgba(0, 242, 254, 0.05) 0px, transparent 50%),
+                radial-gradient(at 90% 90%, rgba(127, 0, 255, 0.05) 0px, transparent 50%);
+        }
+        .glass-panel {
+            background: rgba(17, 24, 39, 0.75);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        }
+        .neon-border-cyan {
+            border: 1px solid rgba(0, 242, 254, 0.4);
+            box-shadow: 0 0 15px rgba(0, 242, 254, 0.2);
+        }
+        .neon-border-green {
+            border: 1px solid rgba(0, 255, 135, 0.4);
+            box-shadow: 0 0 15px rgba(0, 255, 135, 0.2);
+        }
+        .neon-text-cyan {
+            text-shadow: 0 0 10px rgba(0, 242, 254, 0.6);
+        }
+        .neon-text-green {
+            text-shadow: 0 0 10px rgba(0, 255, 135, 0.6);
+        }
+        .glow-button {
+            transition: all 0.3s ease;
+        }
+        .glow-button:hover {
+            box-shadow: 0 0 20px rgba(0, 242, 254, 0.5);
+            transform: translateY(-2px);
+        }
+        /* Custom animated data pulses */
+        @keyframes pulseData {
+            0% { transform: translateY(0) scale(1); opacity: 0.2; }
+            50% { opacity: 1; transform: translateY(-5px) scale(1.1); }
+            100% { transform: translateY(0) scale(1); opacity: 0.2; }
+        }
+        .data-pulse {
+            animation: pulseData 2s infinite ease-in-out;
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #090d16; }
+        ::-webkit-scrollbar-thumb { background: #1f293d; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #00f2fe; }
